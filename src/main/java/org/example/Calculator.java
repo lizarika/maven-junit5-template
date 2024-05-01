@@ -14,4 +14,13 @@ public class Calculator {
         return firstNumber>secondNumber;
     }
 
+    //6 floating point division and multiplication method
+    public double calculateDivisionOfTwoNumbersWithFloatingPoint(double firstNumber, double secondNumber){
+        return firstNumber / secondNumber;
+    }
+
+    public double calculateMultiplicationsOfTwoNumbersWithFloatingPoint(double firstNumber, double secondNumber){
+        return firstNumber * secondNumber;
+    }
+
 }

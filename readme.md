@@ -1,5 +1,7 @@
 Methods check list, not less than 4 for each method
 
+5th homework
+
 | N | SumOfTwoNumbers check list | Status   |
 |---|----------------------------|----------|
 | 1 | Sum of 2 positive numbers  | Passed   |
@@ -19,6 +21,7 @@ Methods check list, not less than 4 for each method
 
 
 
+
 | N | ComparingOfTwoNumbers check list      | Status   |
 |---|---------------------------------------|----------|
 | 1 | The fist number is bigger than second | Passed   |
@@ -27,3 +30,17 @@ Methods check list, not less than 4 for each method
 | 4 | Two numbers equals                    | Passed   |
 
 
+6th homework
+
+| N | calculateDivisionOfTwoNumbersWithFloatingPoint check list  | Status   |
+|---|------------------------------------------------------------|----------|
+| 1 | checkingIfTwoPositiveNumbersAreDividedCorrectly            | Passed   |
+| 2 | checkingIfTwoNegativeNumbersAreDividedCorrectly            | Passed   |
+
+
+
+
+| N | calculateMultiplicationsOfTwoNumbersWithFloatingPoint check list | Status   |
+|---|------------------------------------------------------------------|----------|
+| 1 | checkingIfTheTwoPositiveNumbersMultipliedCorrectly               | Passed   |
+| 2 | checkingIfTheTwoNegativeNumbersMultipliedCorrectly               | Passed   |

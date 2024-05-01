@@ -1,9 +1,20 @@
 package org.example;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
+
+
 public class CalculatorTest {
 
+    @BeforeEach
+    void setUp() {
+
+        Calculator calculator = new Calculator();
+        System.out.println("Setting up calculator ");
+    }
+
+    //5 homework
     @Test
     public void checkingTheAdditionOfTwoPositiveNumbers()
     {
@@ -15,7 +26,7 @@ public class CalculatorTest {
     public void checkingTheAdditionOfTwoPositiveNumbersFailed()
     {
         Calculator calculator = new Calculator();
-        assertEquals(10, calculator.calculateSumOfTwoIntegers(8, 4));
+        assertFalse(10 == calculator.calculateSumOfTwoIntegers(8, 4));
 
     }
 
@@ -31,7 +42,7 @@ public class CalculatorTest {
     public void checkingTheAdditionOfTwoNegativeNumbersFailed()
     {
         Calculator calculator = new Calculator();
-        assertEquals(-10, calculator.calculateSumOfTwoIntegers(-8, -4));
+        assertFalse(-10 == calculator.calculateSumOfTwoIntegers(-8, -4));
 
     }
 
@@ -48,7 +59,7 @@ public class CalculatorTest {
     public void checkingTheSubtractingOfTwoNumbersFailed()
     {
         Calculator calculator = new Calculator();
-        assertEquals(6, calculator.calculateSubtractingOfTwoIntegers(12,4));
+        assertFalse(6 == calculator.calculateSubtractingOfTwoIntegers(12,4));
 
     }
 
@@ -64,7 +75,7 @@ public class CalculatorTest {
     public void checkingTheSubtractingOfTwoNegativeNumbersFailed()
     {
         Calculator calculator = new Calculator();
-        assertEquals(-6, calculator.calculateSubtractingOfTwoIntegers(-12,-4));
+        assertFalse(-6 == calculator.calculateSubtractingOfTwoIntegers(-12,-4));
 
     }
 
@@ -99,5 +110,42 @@ public class CalculatorTest {
         assertTrue(5==5);
 
     }
+
+    //6 homework
+
+    @Test
+    public void checkingIfTwoPositiveNumbersAreDividedCorrectly()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(3.355, calculator.calculateDivisionOfTwoNumbersWithFloatingPoint(7.55, 2.25), 0.001);
+    }
+
+    @Test
+    public void checkingIfTwoNegativeNumbersAreDividedCorrectly()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(4.87, calculator.calculateDivisionOfTwoNumbersWithFloatingPoint(-7.55, -1.55), 0.001);
+    }
+
+
+    @Test
+    public void checkingIfTheTwoPositiveNumbersMultipliedCorrectly()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(57.002, calculator.calculateMultiplicationsOfTwoNumbersWithFloatingPoint(7.55, 7.55), 0.001);
+
+    }
+
+    @Test
+    public void checkingIfTheTwoNegativeNumbersMultipliedCorrectly()
+    {
+        Calculator calculator = new Calculator();
+        assertEquals(10.343, calculator.calculateMultiplicationsOfTwoNumbersWithFloatingPoint(-7.55, -1.37), 0.001);
+
+    }
+
+
+
+
 
 }
